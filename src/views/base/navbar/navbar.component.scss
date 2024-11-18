@@ -1,32 +1,61 @@
-.menu {
-  width: auto;
-  height: auto;
+@use '@angular/material' as mat;
+@use '../../../custom-theme' as *;
+
+:host {
+  width: 100%;
+}
+
+::ng-deep .cdk-overlay-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .columns-container {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
   gap: 20px;
   padding: 10px;
+  height: 200px;
+  width: 800px;
 }
 
-.menu-section {
+.menu-column {
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 100px;
+  height: 200px;
 }
 
-.menu-title {
+.menu-column-title {
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 8px;
 }
 
-mat-menu-item {
-  text-align: left;
-  text-decoration: none;
-  color: inherit;
-  padding: 8px 16px;
+.menu-item {
   display: block;
   width: 100%;
+}
+
+.menu-link {
+  text-align: left;
+  text-decoration: none;
+}
+
+.menu-link:link {
+  color: black;
+}
+
+.menu-link:visited {
+  color: black;
+}
+
+.menu-link:hover {
+  color: mat.m2-get-color-from-palette($primary-palette, 500);
+}
+
+.menu-link:active {
+  color: mat.m2-get-color-from-palette($primary-palette, 500);
 }
