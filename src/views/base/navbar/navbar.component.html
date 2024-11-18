@@ -1,10 +1,44 @@
-<mat-toolbar color="white">
-  <span class="logo-text"><b>Green</b> your <b>home</b></span>
-  <button
-    class="avatar-button"
-    at-icon-button
-    aria-label="User menu"
-  >
-    <mat-icon color="primary" class="avatar">person</mat-icon>
-  </button>
+<mat-toolbar color="primary">
+  <mat-button
+    mat-icon-button
+    #plantsMenuTrigger="matMenuTrigger"
+    (mouseover)="openMyMenu(plantsMenuTrigger)"
+    [matMenuTriggerFor]="plantsMenu">
+    Plants
+  </mat-button>
+
+  <mat-menu #plantsMenu="matMenu" class="menu">
+    <div class="columns-container">
+      <div class="menu-section">
+        <span class="menu-title">Sale</span>
+        <span mat-menu-item>
+          <a href="/sale" class="menu-link">-70%</a>
+        </span>
+        <span mat-menu-item>
+          <a href="/sale-3-for-2" class="menu-link">3 for 2</a>
+        </span>
+      </div>
+
+      <div class="menu-section">
+        <span class="menu-title">All Plants</span>
+        <span mat-menu-item>
+          <a href="/bestsellers" class="menu-link">Bestsellers</a>
+        </span>
+        <span mat-menu-item>
+          <a href="/plants" class="menu-link">All plants</a>
+        </span>
+      </div>
+
+      <div class="menu-section">
+        <span class="menu-title">Species</span>
+        <span mat-menu-item>
+          <a href="/calatheas" class="menu-link">Calatheas & Marantas</a>
+        </span>
+        <span mat-menu-item>
+          <a href="/pileas" class="menu-link">Pileas</a>
+        </span>
+      </div>
+    </div>
+  </mat-menu>
+
 </mat-toolbar>

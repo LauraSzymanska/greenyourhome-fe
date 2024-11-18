@@ -1,23 +1,32 @@
-@use '@angular/material' as mat;
-@use '../../../custom-theme' as *;
-
-.logo-text {
-  color: mat.m2-get-color-from-palette($primary-palette, 500);
+.menu {
+  width: auto;
+  height: auto;
 }
 
-mat-toolbar {
-  height: 8%;
+.columns-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 10px;
 }
 
-.avatar {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-}
-
-.avatar-button {
-  background-color: transparent;
-  border: none;
+.menu-section {
   display: flex;
-  margin-left: auto;
+  flex-direction: column;
+  text-align: left;
+}
+
+.menu-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+mat-menu-item {
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 16px;
+  display: block;
+  width: 100%;
 }

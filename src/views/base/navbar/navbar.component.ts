@@ -1,19 +1,21 @@
 import { Component } from '@angular/core';
 import {MatToolbar} from '@angular/material/toolbar';
-import {NgStyle} from '@angular/common';
-import {MatIcon} from '@angular/material/icon';
+import {MatMenu, MatMenuTrigger} from '@angular/material/menu';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [
     MatToolbar,
-    NgStyle,
-    MatIcon,
+    MatMenuTrigger,
+    MatMenu,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
 
+  openMyMenu(menuTrigger: MatMenuTrigger) {
+    menuTrigger.openMenu();
+  }
 }
