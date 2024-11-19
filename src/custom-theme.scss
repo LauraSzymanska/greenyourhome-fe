@@ -1,0 +1,62 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$primary-palette: (
+  100: #c2d08f,
+  500: #40531b,
+  700: #2a3610,
+  contrast: (
+    100: #000000,
+    500: #ffffff,
+    700: #ffffff,
+  ),
+);
+
+$accent-palette: (
+  100: #e2e8d4,
+  500: #afbc88,
+  700: #6d7446,
+  contrast: (
+    100: #000000,
+    500: #ffffff,
+    700: #ffffff,
+  ),
+);
+
+$greenyourhome-fe-theme: mat.m2-define-light-theme((
+  color: (
+    primary: mat.m2-define-palette($primary-palette),
+    accent: mat.m2-define-palette($accent-palette),
+    warn: mat.m2-define-palette($primary-palette),
+  ),
+  density: (
+    scale: 0,
+  ),
+  typography: (
+    brand-family: 'Montserrat',
+    bold-weight: 100
+  ),
+));
+
+$greenyourhome-fe-dark-theme: mat.m2-define-dark-theme((
+  color: (
+    primary: mat.m2-define-palette($primary-palette),
+    accent: mat.m2-define-palette($accent-palette),
+    warn: mat.m2-define-palette($primary-palette),
+  ),
+  density: (
+    scale: 0,
+  ),
+  typography: (
+    brand-family: 'Montserrat',
+    bold-weight: 100
+  ),
+));
+
+@include mat.all-component-themes($greenyourhome-fe-theme);
+
+@media (prefers-color-scheme: dark) {
+  @include mat.core-color($greenyourhome-fe-dark-theme);
+  @include mat.button-color($greenyourhome-fe-dark-theme);
+}
