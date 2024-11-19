@@ -1,45 +1,230 @@
-<mat-toolbar color="primary">
-  <mat-button
-    class="menu-category"
-    mat-icon-button
-    #plantsMenuTrigger="matMenuTrigger"
-    (mouseover)="openMyMenu(plantsMenuTrigger)"
-    [matMenuTriggerFor]="plantsMenu">
-    Plants
-  </mat-button>
-
-  <mat-menu #plantsMenu="matMenu" class="sub-menu">
-    <div class="columns-container">
-      <div class="menu-column">
-        <span class="menu-column-title">Sale</span>
-        <span class="menu-item">
-          <a href="/sale" class="menu-link">-70%</a>
-        </span>
-        <span class="menu-item">
-          <a href="/sale-3-for-2" class="menu-link">3 for 2</a>
+<mat-toolbar class="mat-toolbar" color="primary">
+  <ul class="menu-toolbar">
+    <li>
+      <div class="menu-category">
+        <span class="menu-title">
+          <a href="#" class="menu-sale-link">SALE</a>
         </span>
       </div>
+    </li>
 
-      <div class="menu-column">
-        <span class="menu-column-title">All Plants</span>
-        <span class="menu-item">
-          <a href="/bestsellers" class="menu-link">Bestsellers</a>
-        </span>
-        <span class="menu-item">
-          <a href="/plants" class="menu-link">All plants</a>
-        </span>
+    <li>
+      <div class="menu-category" (mouseover)="showMenu('plants')" (mouseleave)="hideMenu('plants')">
+        <span class="menu-title">Plants</span>
       </div>
 
-      <div class="menu-column">
-        <span class="menu-column-title">Species</span>
-        <span mat-menu-item>
-          <a href="/calatheas" class="menu-link">Calatheas & Marantas</a>
-        </span>
-        <span mat-menu-item>
-          <a href="/pileas" class="menu-link">Pileas</a>
-        </span>
-      </div>
-    </div>
-  </mat-menu>
+      @if( activeMenu === 'plants' ) {
+        <div class="dropdown-submenu" (mouseover)="showMenu('plants')" (mouseleave)="hideMenu('plants')">
+          <div class="submenu-columns-container">
+            <div class="submenu-column">
+              <span class="submenu-column-title">Plants</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All plants</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Bestsellers</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">By species</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Calathea & Maranta</a>
+              </span>
+              <span class="submenu-item">
+                  <a href="#" class="submenu-link">Pilea</a>
+              </span>
+              <span class="submenu-item">
+                  <a href="#" class="submenu-link">Philodendron</a>
+              </span>
+              <span class="submenu-item">
+                  <a href="#" class="submenu-link">Monstera</a>
+              </span>
+              <span class="submenu-item">
+                  <a href="#" class="submenu-link">Hoya</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">By size</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Big</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Medium</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Small</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Mini</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">Other</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Safe for pets</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Easy care</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      }
+    </li>
 
+    <li>
+      <div class="menu-category" (mouseover)="showMenu('potsplanters')" (mouseleave)="hideMenu('potsplanters')">
+        <span class="menu-title">Pots & Planters</span>
+      </div>
+
+      @if( activeMenu === 'potsplanters' ) {
+        <div class="dropdown-submenu" (mouseover)="showMenu('potsplanters')" (mouseleave)="hideMenu('potsplanters')">
+          <div class="submenu-columns-container">
+            <div class="submenu-column">
+              <span class="submenu-column-title">Pots & planters</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All pots and planters</a>
+              </span>
+              <span class="submenu-column-title">By size</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Big</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Medium</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Small</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Mini</a>
+              </span>
+              <span class="submenu-column-title">By material</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Plastic</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Ceramic</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Clay</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">Pots</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All pots</a>
+              </span>
+              <span class="submenu-column-title">By size</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Big</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Medium</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Small</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Mini</a>
+              </span>
+              <span class="submenu-column-title">By material</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Plastic</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Ceramic</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Clay</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">Planters</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All planters</a>
+              </span>
+              <span class="submenu-column-title">By size</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Big</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Medium</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Small</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Mini</a>
+              </span>
+              <span class="submenu-column-title">By material</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Plastic</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Ceramic</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Clay</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      }
+    </li>
+
+    <li>
+      <div class="menu-category" (mouseover)="showMenu('accesories')" (mouseleave)="hideMenu('accesories')">
+        <span class="menu-title">Accesories</span>
+      </div>
+
+      @if(activeMenu === 'accesories') {
+        <div class="dropdown-submenu" (mouseover)="showMenu('accesories')" (mouseleave)="hideMenu('accesories')">
+          <div class="submenu-columns-container">
+            <div class="submenu-column">
+              <span class="submenu-column-title">Fertilizers</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All fertilizers</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">Watering cans</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All watering cans</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Metal</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Plastic</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">Gardening tools</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All gardening tools</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Tools</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Gloves</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">Decorations</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">All decorations</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Plant stands</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">Hanging holders & Macrame hangers </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      }
+    </li>
+  </ul>
 </mat-toolbar>

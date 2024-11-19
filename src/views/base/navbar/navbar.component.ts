@@ -15,7 +15,15 @@ import {MatMenu, MatMenuTrigger} from '@angular/material/menu';
 })
 export class NavbarComponent {
 
-  openMyMenu(menuTrigger: MatMenuTrigger) {
-    menuTrigger.openMenu();
+  activeMenu: string | null = null;
+
+  showMenu(menuType: string) {
+    this.activeMenu = menuType;
+  }
+
+  hideMenu(menuType: string) {
+    if(this.activeMenu === menuType) {
+      this.activeMenu = null;
+    }
   }
 }

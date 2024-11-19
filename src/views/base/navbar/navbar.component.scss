@@ -1,61 +1,118 @@
 @use '@angular/material' as mat;
 @use '../../../custom-theme' as *;
 
-:host {
-  width: 100%;
+.mat-toolbar {
+  position: relative;
+  height: 3vw;
+  margin: auto;
 }
 
-::ng-deep .cdk-overlay-container {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+.menu-toolbar {
+  display: flex;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: auto;
 }
 
-.columns-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 100px);
-  gap: 20px;
+.mat-toolbar li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+
+.menu-category {
+  display: flex;
+  position: relative;
+  padding: 0 24px;
+  cursor: pointer;
+  color: white;
+  height: inherit;
+  align-items: center;
+  width: auto;
+}
+
+.menu-sale-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 700
+}
+
+.menu-category:hover {
+  background: mat.m2-get-color-from-palette($primary-palette, 700);
+}
+
+.dropdown-submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
   padding: 10px;
-  height: 200px;
-  width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.menu-column {
+.dropdown-submenu.ng-trigger {
+  visibility: visible;
+}
+
+.submenu-columns-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 60px;
+  padding: 10px;
+  height: auto;
+}
+
+.submenu-column {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 100px;
-  height: 200px;
+  max-width: 200px;
 }
 
-.menu-column-title {
+.submenu-column-title {
+  color: black;
   font-weight: bold;
   font-size: 1rem;
-  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 2px;
 }
 
-.menu-item {
+.submenu-item {
   display: block;
   width: 100%;
+  font-size: 1rem;
+  padding: 4px 0;
+  word-break: break-word;
 }
 
-.menu-link {
+.submenu-link {
   text-align: left;
   text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
-.menu-link:link {
+.submenu-link:link {
   color: black;
 }
 
-.menu-link:visited {
+.submenu-link:visited {
   color: black;
 }
 
-.menu-link:hover {
+.submenu-link:hover {
   color: mat.m2-get-color-from-palette($primary-palette, 500);
 }
 
-.menu-link:active {
+.submenu-link:active {
   color: mat.m2-get-color-from-palette($primary-palette, 500);
 }
