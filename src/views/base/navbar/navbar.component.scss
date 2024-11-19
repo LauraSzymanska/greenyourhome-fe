@@ -35,14 +35,15 @@
   width: auto;
 }
 
+.menu-category:hover,
+.menu-category.active {
+  background: mat.m2-get-color-from-palette($primary-palette, 700);
+}
+
 .menu-sale-link {
   color: white;
   text-decoration: none;
   font-weight: 700
-}
-
-.menu-category:hover {
-  background: mat.m2-get-color-from-palette($primary-palette, 700);
 }
 
 .dropdown-submenu {

@@ -9,7 +9,7 @@
     </li>
 
     <li>
-      <div class="menu-category" (mouseover)="showMenu('plants')" (mouseleave)="hideMenu('plants')">
+      <div class="menu-category" [class.active]="activeMenu === 'plants'" (mouseover)="showMenu('plants')" (mouseleave)="hideMenu('plants')">
         <span class="menu-title">Plants</span>
       </div>
 
@@ -73,7 +73,7 @@
     </li>
 
     <li>
-      <div class="menu-category" (mouseover)="showMenu('potsplanters')" (mouseleave)="hideMenu('potsplanters')">
+      <div class="menu-category" [class.active]="activeMenu === 'potsplanters'" (mouseover)="showMenu('potsplanters')" (mouseleave)="hideMenu('potsplanters')">
         <span class="menu-title">Pots & Planters</span>
       </div>
 
@@ -173,7 +173,7 @@
     </li>
 
     <li>
-      <div class="menu-category" (mouseover)="showMenu('accesories')" (mouseleave)="hideMenu('accesories')">
+      <div class="menu-category" [class.active]="activeMenu === 'accesories'" (mouseover)="showMenu('accesories')" (mouseleave)="hideMenu('accesories')">
         <span class="menu-title">Accesories</span>
       </div>
 
