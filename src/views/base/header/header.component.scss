@@ -7,17 +7,16 @@
 
 mat-toolbar {
   height: 8%;
+  justify-content: space-between;
 }
 
-.avatar {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
+.toolbar-right {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
 }
 
-.avatar-button {
+.button {
   background-color: transparent;
   border: none;
-  display: flex;
-  margin-left: auto;
 }
