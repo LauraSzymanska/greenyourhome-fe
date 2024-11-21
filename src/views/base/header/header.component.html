@@ -1,15 +1,35 @@
 <mat-toolbar color="white">
   <span class="logo-text"><b>Green</b> your <b>home</b></span>
   <div class="toolbar-right">
+    @if(language() === 'pl') {
+      <button
+        class="language-button"
+        mat-icon-button
+        aria-label="User menu"
+        (click)="useLanguage('en')"
+      >
+        EN
+      </button>
+    } @else {
+      <button
+        class="language-button"
+        mat-icon-button
+        aria-label="User menu"
+        (click)="useLanguage('pl')"
+      >
+        PL
+      </button>
+    }
+
     <button
-      class="button"
+      class="icon_button"
       mat-icon-button
       aria-label="User menu"
     >
       <mat-icon color="primary" class="icon">shopping_cart</mat-icon>
     </button>
     <button
-      class="button"
+      class="icon_button"
       mat-icon-button
       aria-label="User menu"
     >

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatToolbar} from '@angular/material/toolbar';
 import {MatMenu, MatMenuTrigger} from '@angular/material/menu';
+import {TranslateDirective, TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +10,8 @@ import {MatMenu, MatMenuTrigger} from '@angular/material/menu';
     MatToolbar,
     MatMenuTrigger,
     MatMenu,
+    TranslatePipe,
+    TranslateDirective
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'

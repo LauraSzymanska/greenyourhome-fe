@@ -3,68 +3,68 @@
     <li>
       <div class="menu-category">
         <span class="menu-title">
-          <a href="#" class="menu-sale-link">SALE</a>
+          <a href="#" class="menu-sale-link">{{'Sale_Capital_Letters' | translate}}</a>
         </span>
       </div>
     </li>
 
     <li>
       <div class="menu-category" [class.active]="activeMenu === 'plants'" (mouseover)="showMenu('plants')" (mouseleave)="hideMenu('plants')">
-        <span class="menu-title">Plants</span>
+        <span class="menu-title">{{'Plants' | translate}}</span>
       </div>
 
       @if( activeMenu === 'plants' ) {
         <div class="dropdown-submenu" (mouseover)="showMenu('plants')" (mouseleave)="hideMenu('plants')">
           <div class="submenu-columns-container">
             <div class="submenu-column">
-              <span class="submenu-column-title">Plants</span>
+              <span class="submenu-column-title">{{'Plants' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">All plants</a>
+                <a href="#" class="submenu-link">{{'All_Plants' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Bestsellers</a>
-              </span>
-            </div>
-            <div class="submenu-column">
-              <span class="submenu-column-title">By species</span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Calathea & Maranta</a>
-              </span>
-              <span class="submenu-item">
-                  <a href="#" class="submenu-link">Pilea</a>
-              </span>
-              <span class="submenu-item">
-                  <a href="#" class="submenu-link">Philodendron</a>
-              </span>
-              <span class="submenu-item">
-                  <a href="#" class="submenu-link">Monstera</a>
-              </span>
-              <span class="submenu-item">
-                  <a href="#" class="submenu-link">Hoya</a>
+                <a href="#" class="submenu-link">{{'Bestsellers' | translate}}</a>
               </span>
             </div>
             <div class="submenu-column">
-              <span class="submenu-column-title">By size</span>
+              <span class="submenu-column-title">{{'Species' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Big</a>
+                <a href="#" class="submenu-link">{{'Calathea_Maranta' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Medium</a>
+                  <a href="#" class="submenu-link">{{'Pilea' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Small</a>
+                  <a href="#" class="submenu-link">{{'Philodendron' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Mini</a>
+                  <a href="#" class="submenu-link">{{'Monstera' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                  <a href="#" class="submenu-link">{{'Hoya' | translate}}</a>
               </span>
             </div>
             <div class="submenu-column">
-              <span class="submenu-column-title">Other</span>
+              <span class="submenu-column-title">{{'Size' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Safe for pets</a>
+                <a href="#" class="submenu-link">{{'Big' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Easy care</a>
+                <a href="#" class="submenu-link">{{'Medium' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Small' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Mini' | translate}}</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">{{'Other' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Safe_For_Pets' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Easy_Care' | translate}}</a>
               </span>
             </div>
           </div>
@@ -73,98 +73,98 @@
     </li>
 
     <li>
-      <div class="menu-category" [class.active]="activeMenu === 'potsplanters'" (mouseover)="showMenu('potsplanters')" (mouseleave)="hideMenu('potsplanters')">
-        <span class="menu-title">Pots & Planters</span>
+      <div class="menu-category" [class.active]="activeMenu === 'potsPlanters'" (mouseover)="showMenu('potsPlanters')" (mouseleave)="hideMenu('potsPlanters')">
+        <span class="menu-title">{{'Pots_Planters' | translate}}</span>
       </div>
 
-      @if( activeMenu === 'potsplanters' ) {
-        <div class="dropdown-submenu" (mouseover)="showMenu('potsplanters')" (mouseleave)="hideMenu('potsplanters')">
+      @if( activeMenu === 'potsPlanters' ) {
+        <div class="dropdown-submenu" (mouseover)="showMenu('potsPlanters')" (mouseleave)="hideMenu('potsPlanters')">
           <div class="submenu-columns-container">
             <div class="submenu-column">
-              <span class="submenu-column-title">Pots & planters</span>
+              <span class="submenu-column-title">{{'Pots_Planters' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">All pots and planters</a>
+                <a href="#" class="submenu-link">{{'All_Pots_Planters' | translate}}</a>
               </span>
-              <span class="submenu-column-title">By size</span>
+              <span class="submenu-column-title">{{'Size' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Big</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Medium</a>
+                <a href="#" class="submenu-link">{{'Big' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Small</a>
+                <a href="#" class="submenu-link">{{'Medium' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Mini</a>
-              </span>
-              <span class="submenu-column-title">By material</span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Plastic</a>
+                <a href="#" class="submenu-link">{{'Small' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Ceramic</a>
+                <a href="#" class="submenu-link">{{'Mini' | translate}}</a>
+              </span>
+              <span class="submenu-column-title">{{'Material' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Plastic' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Clay</a>
-              </span>
-            </div>
-            <div class="submenu-column">
-              <span class="submenu-column-title">Pots</span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">All pots</a>
-              </span>
-              <span class="submenu-column-title">By size</span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Big</a>
+                <a href="#" class="submenu-link">{{'Ceramic' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Medium</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Small</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Mini</a>
-              </span>
-              <span class="submenu-column-title">By material</span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Plastic</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Ceramic</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Clay</a>
+                <a href="#" class="submenu-link">{{'Clay' | translate}}</a>
               </span>
             </div>
             <div class="submenu-column">
-              <span class="submenu-column-title">Planters</span>
+              <span class="submenu-column-title">{{'Pots' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">All planters</a>
+                <a href="#" class="submenu-link">{{'All_Pots' | translate}}</a>
               </span>
-              <span class="submenu-column-title">By size</span>
+              <span class="submenu-column-title">{{'Size' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Big</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Medium</a>
+                <a href="#" class="submenu-link">{{'Big' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Small</a>
+                <a href="#" class="submenu-link">{{'Medium' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Mini</a>
-              </span>
-              <span class="submenu-column-title">By material</span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Plastic</a>
+                <a href="#" class="submenu-link">{{'Small' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Ceramic</a>
+                <a href="#" class="submenu-link">{{'Mini' | translate}}</a>
+              </span>
+              <span class="submenu-column-title">{{'Material' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Plastic' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Clay</a>
+                <a href="#" class="submenu-link">{{'Ceramic' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Clay' | translate}}</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">{{'Planters' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'All_Planters' | translate}}</a>
+              </span>
+              <span class="submenu-column-title">{{'Size' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Big' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Medium' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Small' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Mini' | translate}}</a>
+              </span>
+              <span class="submenu-column-title">{{'Material' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Plastic' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Ceramic' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Clay' | translate}}</a>
               </span>
             </div>
           </div>
@@ -174,52 +174,53 @@
 
     <li>
       <div class="menu-category" [class.active]="activeMenu === 'accesories'" (mouseover)="showMenu('accesories')" (mouseleave)="hideMenu('accesories')">
-        <span class="menu-title">Accesories</span>
+        <span class="menu-title">{{'Accessories' | translate}}</span>
       </div>
 
       @if(activeMenu === 'accesories') {
         <div class="dropdown-submenu" (mouseover)="showMenu('accesories')" (mouseleave)="hideMenu('accesories')">
           <div class="submenu-columns-container">
             <div class="submenu-column">
-              <span class="submenu-column-title">Fertilizers</span>
+              <span class="submenu-column-title">{{'Fertilizers' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">All fertilizers</a>
+                <a href="#" class="submenu-link">{{'All_Fertilizers' | translate}}</a>
               </span>
             </div>
             <div class="submenu-column">
-              <span class="submenu-column-title">Watering cans</span>
+              <span class="submenu-column-title">{{'Watering_Cans' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">All watering cans</a>
+                <a href="#" class="submenu-link">{{'All_Watering_Cans' | translate}}</a>
+              </span>
+              <span class="submenu-column-title">{{'Material' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Metal' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Metal</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Plastic</a>
-              </span>
-            </div>
-            <div class="submenu-column">
-              <span class="submenu-column-title">Gardening tools</span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">All gardening tools</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Tools</a>
-              </span>
-              <span class="submenu-item">
-                <a href="#" class="submenu-link">Gloves</a>
+                <a href="#" class="submenu-link">{{'Plastic' | translate}}</a>
               </span>
             </div>
             <div class="submenu-column">
-              <span class="submenu-column-title">Decorations</span>
+              <span class="submenu-column-title">{{'Gardening_Accessories' | translate}}</span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">All decorations</a>
+                <a href="#" class="submenu-link">{{'All_Gardening_Accessories' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Plant stands</a>
+                <a href="#" class="submenu-link">{{'Gardening_Tools' | translate}}</a>
               </span>
               <span class="submenu-item">
-                <a href="#" class="submenu-link">Hanging holders & Macrame hangers </a>
+                <a href="#" class="submenu-link">{{'Gloves' | translate}}</a>
+              </span>
+            </div>
+            <div class="submenu-column">
+              <span class="submenu-column-title">{{'Decorations' | translate}}</span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'All_Decorations' | translate}}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Plant_Stands' | translate }}</a>
+              </span>
+              <span class="submenu-item">
+                <a href="#" class="submenu-link">{{'Hanging_Holders_Macrame_Hangers' | translate}}</a>
               </span>
             </div>
           </div>

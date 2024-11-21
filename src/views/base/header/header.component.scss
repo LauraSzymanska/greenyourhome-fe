@@ -6,7 +6,7 @@
 }
 
 mat-toolbar {
-  height: 8%;
+  height: 4vw;
   justify-content: space-between;
 }
 
@@ -16,7 +16,14 @@ mat-toolbar {
   gap: 10px;
 }
 
-.button {
+.language-button {
+  color: mat.m2-get-color-from-palette($primary-palette, 500);
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.icon_button {
   background-color: transparent;
   border: none;
 }
