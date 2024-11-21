@@ -6,7 +6,7 @@
 }
 
 mat-toolbar {
-  height: 8%;
+  height: 4vw;
   justify-content: space-between;
 }
 
@@ -19,4 +19,10 @@ mat-toolbar {
 .button {
   background-color: transparent;
   border: none;
+}
+
+.country-flag {
+  width: 24px;
+  height: auto;
+  border: 0.5px gray solid;
 }

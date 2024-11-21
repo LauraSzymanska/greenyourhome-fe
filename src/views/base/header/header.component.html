@@ -1,6 +1,22 @@
 <mat-toolbar color="white">
   <span class="logo-text"><b>Green</b> your <b>home</b></span>
   <div class="toolbar-right">
+    @if(language() === 'pl') {
+      <button
+        class="button"
+        (click)="useLanguage('en')"
+      >
+        <img class="country-flag" src="/flags/en.svg" alt="English"/>
+      </button>
+    } @else {
+      <button
+        class="button"
+        (click)="useLanguage('pl')"
+      >
+        <img class="country-flag" src="/flags/pl.svg" alt="Polish"/>
+      </button>
+    }
+
     <button
       class="button"
       mat-icon-button
