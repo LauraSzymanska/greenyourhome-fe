@@ -3,29 +3,33 @@
   <div class="toolbar-right">
     @if(language() === 'pl') {
       <button
-        class="button"
+        class="language-button"
+        mat-icon-button
+        aria-label="User menu"
         (click)="useLanguage('en')"
       >
-        <img class="country-flag" src="/flags/en.svg" alt="English"/>
+        EN
       </button>
     } @else {
       <button
-        class="button"
+        class="language-button"
+        mat-icon-button
+        aria-label="User menu"
         (click)="useLanguage('pl')"
       >
-        <img class="country-flag" src="/flags/pl.svg" alt="Polish"/>
+        PL
       </button>
     }
 
     <button
-      class="button"
+      class="icon_button"
       mat-icon-button
       aria-label="User menu"
     >
       <mat-icon color="primary" class="icon">shopping_cart</mat-icon>
     </button>
     <button
-      class="button"
+      class="icon_button"
       mat-icon-button
       aria-label="User menu"
     >

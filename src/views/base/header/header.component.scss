@@ -16,13 +16,14 @@ mat-toolbar {
   gap: 10px;
 }
 
-.button {
-  background-color: transparent;
+.language-button {
+  color: mat.m2-get-color-from-palette($primary-palette, 500);
   border: none;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-.country-flag {
-  width: 24px;
-  height: auto;
-  border: 0.5px gray solid;
+.icon_button {
+  background-color: transparent;
+  border: none;
 }
