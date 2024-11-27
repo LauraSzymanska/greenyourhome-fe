@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HeaderComponent} from '../header/header.component';
 import {NavbarComponent} from '../navbar/navbar.component';
 import {RouterOutlet} from '@angular/router';
 import {FooterComponent} from '../footer/footer.component';
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-shell',
@@ -16,6 +17,16 @@ import {FooterComponent} from '../footer/footer.component';
   templateUrl: './shell.component.html',
   styleUrl: './shell.component.scss'
 })
-export class ShellComponent {
+export class ShellComponent implements OnInit {
+
+  isMobile: boolean = false;
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit() {
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
+      this.isMobile = result.matches;
+    });
+  }
 
 }
