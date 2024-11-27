@@ -24,9 +24,15 @@ export class ShellComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit() {
-    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
-      this.isMobile = result.matches;
-    });
+    this.breakpointObserver
+      .observe([
+        Breakpoints.Handset,
+        Breakpoints.TabletPortrait,
+        Breakpoints.WebPortrait,
+      ])
+      .subscribe(result => {
+        this.isMobile = result.matches;
+      });
   }
 
 }
