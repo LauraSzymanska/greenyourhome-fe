@@ -1,0 +1,34 @@
+@use '@angular/material' as mat;
+@use '../../../custom-theme' as *;
+
+.submenu-item {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 4px 0;
+  word-break: break-word;
+}
+
+.submenu-link {
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  color: black;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #dddddd;
+  color: inherit;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
+.accordion-button.no-toggle::after {
+  display: none !important;
+}
