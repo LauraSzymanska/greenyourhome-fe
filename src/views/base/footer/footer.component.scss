@@ -1,26 +1,4 @@
-body {
-  padding-bottom: 60px;
-}
-
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  height: 3vw;
-  color: white;
-  z-index: 1;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 16px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
+  height: auto;
+  z-index: 500;
 }

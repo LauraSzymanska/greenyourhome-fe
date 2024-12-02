@@ -1,0 +1,405 @@
+<mat-toolbar>
+  <div class="ms-auto d-flex">
+    <button mat-icon-button class="btn btn-light p-0 d-flex align-items-center justify-content-center" (click)="closeMenu()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<div class="accordion mt-2 accordion-flush" id="menuAccordion">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed no-toggle fw-bold"
+        type="button"
+        (click)="onSaleClick()"
+      >
+      {{ 'Sale_Capital_Letters' | translate }}
+      </button>
+    </h2>
+  </div>
+
+  <div class="accordion-item pb-0">
+    <h2 class="accordion-header" id="plantsHeader">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#plantsCollapse"
+        aria-expanded="false"
+        aria-controls="plantsCollapse"
+      >
+        <span>{{'Plants' | translate}}</span>
+      </button>
+    </h2>
+    <div
+      id="plantsCollapse"
+      class="accordion-collapse collapse"
+      aria-labelledby="plantsHeader"
+    >
+      <div class="accordion-body pb-0">
+        <ul class="list-unstyled">
+<!--          Plants tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Plants' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Plants' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Bestsellers' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+<!--            Species tab-->
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Species' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Calathea_Maranta' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Pilea' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Philodendron' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Monstera' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Hoya' | translate}}</a>
+            </span>
+          </li>
+<!--          Size tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Size' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Big' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Medium' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Small' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Mini' | translate}}</a>
+            </span>
+          </li>
+<!--          Others tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Other' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Safe_For_Pets' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Easy_Care' | translate}}</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item pb-0">
+    <h2 class="accordion-header" id="potsPlantersHeader">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#potsPlantersCollapse"
+        aria-expanded="false"
+        aria-controls="potsPlantersCollapse"
+      >
+        <span>{{'Pots_Planters' | translate}}</span>
+      </button>
+    </h2>
+    <div
+      id="potsPlantersCollapse"
+      class="accordion-collapse collapse"
+      aria-labelledby="potsPlantersHeader"
+    >
+      <div class="accordion-body">
+        <ul class="list-unstyled">
+<!--          Pots and planters tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Pots_Planters' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Pots_Planters' | translate}}</a>
+            </span>
+          </li>
+<!--          Size tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold fs-6 pt-2 pb-1">{{'Size' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Big' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Medium' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Small' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Mini' | translate}}</a>
+            </span>
+          </li>
+<!--          Material tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold fs-6 pt-2 pb-1">{{'Material' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Plastic' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Ceramic' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Clay' | translate}}</a>
+            </span>
+          </li>
+<!--          Pots tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Pots' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Pots' | translate}}</a>
+            </span>
+          </li>
+<!--          Size tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold fs-6 pt-2 pb-1">{{'Size' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Big' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Medium' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Small' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Mini' | translate}}</a>
+            </span>
+          </li>
+<!--          Material tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold fs-6 pt-2 pb-1">{{'Material' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Plastic' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Ceramic' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Clay' | translate}}</a>
+            </span>
+          </li>
+<!--          Planters tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Planters' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Planters' | translate}}</a>
+            </span>
+          </li>
+<!--          Size tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold fs-6 pt-2 pb-1">{{'Size' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Big' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Medium' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Small' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Mini' | translate}}</a>
+            </span>
+          </li>
+<!--          Material tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold fs-6 pt-2 pb-1">{{'Material' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Plastic' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Ceramic' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Clay' | translate}}</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item pb-0">
+    <h2 class="accordion-header" id="accessoriesHeader">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#accessoriesCollapse"
+        aria-expanded="false"
+        aria-controls="accessoriesCollapse"
+      >
+        <span>{{'Accessories' | translate}}</span>
+      </button>
+    </h2>
+    <div
+      id="accessoriesCollapse"
+      class="accordion-collapse collapse"
+      aria-labelledby="accessoriesHeader"
+    >
+      <div class="accordion-body">
+        <ul class="list-unstyled">
+<!--          Fertilizers tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Fertilizers' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Fertilizers' | translate}}</a>
+            </span>
+          </li>
+<!--          Watering cans tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Watering_Cans' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Watering_Cans' | translate}}</a>
+            </span>
+          </li>
+<!--          Material tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold fs-6 pt-2 pb-1">{{'Material' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Metal' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Plastic' | translate}}</a>
+            </span>
+          </li>
+<!--          Gardening accessories tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Gardening_Accessories' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Gardening_Accessories' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Gardening_Tools' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Gloves' | translate}}</a>
+            </span>
+          </li>
+<!--          Decorations tab-->
+          <li class="mb-2">
+            <span class="text-dark fw-bold text-decoration-underline fs-6 pt-2 pb-1">{{'Decorations' | translate}}</span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'All_Decorations' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Plant_Stands' | translate}}</a>
+            </span>
+          </li>
+          <li class="mb-2">
+            <span>
+              <a href="#" class="text-start text-decoration-none text-wrap text-dark">{{'Hanging_Holders_Macrame_Hangers' | translate}}</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

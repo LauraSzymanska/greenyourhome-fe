@@ -1,29 +1,9 @@
 @use '@angular/material' as mat;
 @use '../../../custom-theme' as *;
 
-.logo-text {
+.logo {
   color: mat.m2-get-color-from-palette($primary-palette, 500);
 }
 
-mat-toolbar {
-  height: 4vw;
-  justify-content: space-between;
-}
 
-.toolbar-right {
-  margin-left: auto;
-  display: flex;
-  gap: 10px;
-}
 
-.language-button {
-  color: mat.m2-get-color-from-palette($primary-palette, 500);
-  border: none;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.icon_button {
-  background-color: transparent;
-  border: none;
-}

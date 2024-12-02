@@ -1,20 +1,22 @@
-<mat-toolbar color="white">
-  <span class="logo-text"><b>Green</b> your <b>home</b></span>
-  <div class="toolbar-right">
+<mat-toolbar class="d-flex align-items-center justify-content-between" style="height: 4rem;" color="white">
+  <span class="logo"><b>Green</b> your <b>home</b></span>
+  <div class="ms-auto d-flex">
     @if(language() === 'pl') {
       <button
-        class="language-button"
+        class="fw-bold fs-6"
         mat-icon-button
         aria-label="User menu"
+        color="primary"
         (click)="useLanguage('en')"
       >
         EN
       </button>
     } @else {
       <button
-        class="language-button"
+        class="fw-bold fs-6"
         mat-icon-button
         aria-label="User menu"
+        color="primary"
         (click)="useLanguage('pl')"
       >
         PL
@@ -22,18 +24,25 @@
     }
 
     <button
-      class="icon_button"
       mat-icon-button
       aria-label="User menu"
     >
       <mat-icon color="primary" class="icon">shopping_cart</mat-icon>
     </button>
     <button
-      class="icon_button"
       mat-icon-button
       aria-label="User menu"
     >
       <mat-icon color="primary" class="icon">person</mat-icon>
     </button>
+    @if(isMobile){
+      <button
+        mat-icon-button
+        aria-label="Open menu"
+        (click)="openBurgerMenu()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+    }
   </div>
 </mat-toolbar>
