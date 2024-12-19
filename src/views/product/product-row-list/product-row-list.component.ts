@@ -96,7 +96,7 @@ export class ProductRowListComponent{
 
   calculateGroups() {
     const remSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    return Math.floor(window.innerWidth / ((18 + 1.5 + 1.5) * remSize));  // Card product width + margin left + margin right (in rem)
+    return Math.floor(window.innerWidth / ((18 + 1.5 + 1.5 + 1) * remSize));  // Card product width + margin left + margin right (in rem) + correction
   }
 
   @HostListener('window:resize')
