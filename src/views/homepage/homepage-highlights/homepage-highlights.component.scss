@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+@use '../../../custom-theme' as *;
+
+:host {
+  display: flex;
+  background-color: mat.m2-get-color-from-palette($primary-palette, 700);;
+  color: #ffffff;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  font-size: 8rem;
+}
