@@ -96,13 +96,14 @@ export class ProductRowListComponent{
 
   calculateGroups() {
     const remSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    return Math.floor(window.innerWidth / ((18 + 1.5 + 1.5 + 1) * remSize));  // Card product width + margin left + margin right (in rem) + correction
+    const maxItemsPerPage = 4;
+    const itemsPerPage = Math.floor(window.innerWidth / ((18 + 1.5 + 1.5 + 1) * remSize))
+    return Math.min(itemsPerPage, maxItemsPerPage);  // Card product width + margin left + margin right (in rem) + correction
   }
 
   @HostListener('window:resize')
   onResize(): void {
     const groupSize = this.calculateGroups();
-    console.log(groupSize);
     this.updateGroupedList(groupSize);
   }
 

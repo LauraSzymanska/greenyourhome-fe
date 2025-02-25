@@ -1,10 +1,7 @@
 @use '@angular/material' as mat;
 @use '../../../custom-theme' as *;
 
-.carousel-control-next-icon {
-  background-color: mat.m2-get-color-from-palette($primary-palette, 500);
-}
-
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: mat.m2-get-color-from-palette($primary-palette, 500);
 }
