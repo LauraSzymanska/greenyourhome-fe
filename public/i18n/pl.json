@@ -17,6 +17,10 @@
   "Contact": "Kontakt",
   "Decorations": "Dekoracje",
   "Easy_Care": "Łatwe w uprawie",
+  "Eco_Packaging": "Ekologiczne pakowanie",
+  "Eco_Packaging_Highlight": "Wykorzystujemy opakowania przyjazne środowisku",
+  "Fast_Shipment": "Szybka dostawa",
+  "Fast_Shipment_Highlight": "Gwarantujemy dostawę w ciągu 2 dni roboczych",
   "Fertilizers": "Nawozy",
   "Gardening_Accessories": "Akcesoria ogrodnicze",
   "Gardening_Tools": "Narzędzia ogrodnicze",
@@ -29,6 +33,9 @@
   "Metal": "Metal",
   "Monstera": "Monstera",
   "Other": "Inne",
+  "Our_Bestsellers": "Nasze Bestsellery",
+  "Quality_Guarantee": "Gwarancja jakości",
+  "Quality_Guarantee_Highlight": "Nasze produkty są stworzone z wysokiej jakości surowców",
   "Pilea": "Pilea",
   "Philodendron": "Filodendron",
   "Planters": "Osłonki",
@@ -44,5 +51,6 @@
   "Small": "Mały",
   "Species": "Gatunki",
   "Terms_Of_Service": "Warunki świadczenia usług",
-  "Watering_Cans": "Konewki"
+  "Watering_Cans": "Konewki",
+  "Why_Us": "Dlaczego my?"
 }
