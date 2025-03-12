@@ -1,0 +1,5 @@
+<div class="container-fluid d-flex flex-wrapnp">
+  @for(product of productList; track product.name) {
+    <app-product-card [productInput]="product"></app-product-card>
+  }
+</div>
