@@ -63,11 +63,13 @@
   },
   "Pots": {
     "Title": "Doniczki",
-    "All_Pots": "Wszystkie doniczki"
+    "All_Pots": "Wszystkie doniczki",
+    "Pots": "Doniczki"
   },
   "Planters": {
     "Title": "Osłonki",
-    "All_Planters": "Wszystkie osłonki"
+    "All_Planters": "Wszystkie osłonki",
+    "Planters": "Osłonki"
   },
   "Material": {
     "Title": "Materiał",
@@ -95,7 +97,6 @@
   },
   "Fertilizers": {
     "Title": "Nawozy",
-    "All_Fertilizers": "Wszystkie nawozy",
-    "Fertilizers": "Nawozy"
+    "All_Fertilizers": "Wszystkie nawozy"
   }
 }

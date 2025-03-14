@@ -20,6 +20,17 @@ export const routes: Routes = [
       {
         path: 'plants',
         component: ProductGridListComponent,
+        data: { category: 'plants' }
+      },
+      {
+        path: 'pots-planters',
+        component: ProductGridListComponent,
+        data: { category: 'pots_planters' }
+      },
+      {
+        path: 'accessories',
+        component: ProductGridListComponent,
+        data: { category: 'accessories' }
       }
     ],
   },

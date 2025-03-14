@@ -1,16 +1,18 @@
 <div class="container-fluid py-5 px-5">
-  <!-- Górny pasek filtrowania -->
-  <!-- <div class="row mb-4">
-    <div class="col d-flex justify-content-between align-items-center">
-      <div>produkty: {{productList.length}}</div>
-    </div>
-  </div> -->
-
   <div class="row">
-
     <div class="col-lg-2 col-md-3">
+      @for(category of getFiltersForCurrentCategory(); track category.name) {
+        <div class="mb-4">
+          <h3 class="h5 mb-3">{{ category.translationKey + '.Title' | translate }}</h3>
+          <div class="d-flex flex-column gap-2">
+            @for(option of category.options; track option) {
+              <a href="#" class="text-decoration-none text-secondary">{{ option | translate }}</a>
+            }
+          </div>
+        </div>
+      }
       <div class="mb-4">
-        <h3 class="h5 mb-3">Cena</h3>
+        <h3 class="h5 mb-3">{{'Price' | translate}}</h3>
         <div class="d-flex gap-3 align-items-center">
           <div>
             <label for="price-from" class="form-label text-decoration-none text-secondary mb-2">od</label>
@@ -23,7 +25,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="col-lg-10 col-md-9">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5 mb-4">
         @for(product of productList; track product.name) {
@@ -35,3 +37,4 @@
     </div>
   </div>
 </div>
+

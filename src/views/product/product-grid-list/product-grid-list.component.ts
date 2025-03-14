@@ -1,19 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {ProductData} from '../../../models/product-data';
 import {ProductCardComponent} from '../product-card/product-card.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { ActivatedRoute } from '@angular/router';
+import { FILTERS_CONFIG, FilterCategory } from '../../../models/filters-data';
 
 @Component({
   selector: 'app-product-grid-list',
   standalone: true,
   imports: [
-    ProductCardComponent
+    ProductCardComponent,
+    TranslateModule
   ],
   templateUrl: './product-grid-list.component.html',
   styleUrl: './product-grid-list.component.scss'
 })
-export class ProductGridListComponent {
+export class ProductGridListComponent implements OnInit {
+  selectedMainCategory: 'plants' | 'pots_planters' | 'accessories' = 'plants';
+  categories: string[] = [];
 
-  categories: string[] = ["Kalatea i Maranta", "Pilea", "Filodendron", "Monstera", "Hoya"];
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.data.subscribe(data => {
+      this.selectedMainCategory = data['category'];
+    });
+  }
+
+  getFiltersForCurrentCategory(): FilterCategory[] {
+    return FILTERS_CONFIG[this.selectedMainCategory].categories;
+  }
 
   productList : ProductData[] = [
     {

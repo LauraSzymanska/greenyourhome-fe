@@ -63,11 +63,13 @@
   },
   "Pots": {
     "Title": "Pots",
-    "All_Pots": "All pots"
+    "All_Pots": "All pots",
+    "Pots": "Pots"
   },
   "Planters": {
     "Title": "Planters",
-    "All_Planters": "All planters"
+    "All_Planters": "All planters",
+    "Planters": "Planters"
   },
   "Material": {
     "Title": "Material",
@@ -95,7 +97,6 @@
   },
   "Fertilizers": {
     "Title": "Fertilizers",
-    "All_Fertilizers": "All fertilizers",
-    "Fertilizers": "Fertilizers"
+    "All_Fertilizers": "All fertilizers"
   }
 }
