@@ -11,46 +11,91 @@
   "All_Watering_Cans": "All watering cans",
   "Bestsellers": "Bestsellers",
   "Big": "Big",
-  "Calathea_Maranta": "Calathea & Maranta",
   "Ceramic": "Ceramic",
   "Clay": "Clay",
   "Contact": "Contact",
-  "Decorations": "Decorations",
   "Easy_Care": "Easy care",
   "Eco_Packaging": "Eco-friendly packaging",
   "Eco_Packaging_Highlight": "We use environmentally friendly packaging",
   "Fast_Shipment": "Fast shipment",
   "Fast_Shipment_Highlight": "We guarantee delivery within 2 business days",
-  "Fertilizers": "Fertilizers",
-  "Gardening_Accessories": "Gardening accessories",
   "Gardening_Tools": "Gardening tools",
   "Gloves": "Gloves",
-  "Hanging_Holders_Macrame_Hangers": "Hanging holders & Macrame hangers",
-  "Hoya": "Hoya",
-  "Material": "Material",
   "Mini": "Mini",
   "Medium": "Medium",
   "Metal": "Metal",
-  "Monstera": "Monstera",
-  "Other": "Other",
   "Our_Bestsellers": "Our Bestsellers",
   "Quality_Guarantee": "Quality Guarantee",
   "Quality_Guarantee_Highlight": "Our product are made from high quality raw materials",
-  "Pilea": "Pilea",
-  "Philodendron": "Philodendron",
-  "Planters": "Planters",
   "Plants": "Plants",
   "Plant_Stands": "Plant stands",
   "Plastic": "Plastic",
-  "Pots": "Pots",
-  "Pots_Planters": "Pots & planters",
+  "Price": "Price",
   "Privacy_Policy": "Privacy Policy",
   "Safe_For_Pets": "Safe for pets",
   "Sale_Capital_Letters": "SALE",
-  "Size": "Size",
   "Small": "Small",
-  "Species": "Species",
   "Terms_Of_Service": "Terms of service",
-  "Watering_Cans": "Watering cans",
-  "Why_Us": "Why us?"
+  "Why_Us": "Why us?",
+  "Species": {
+    "Title": "Species",
+    "Calathea_Maranta": "Calathea & Maranta",
+    "Pilea": "Pilea",
+    "Philodendron": "Philodendron",
+    "Monstera": "Monstera",
+    "Hoya": "Hoya"
+  },
+  "Size": {
+    "Title": "Size",
+    "Big": "Big",
+    "Medium": "Medium",
+    "Small": "Small",
+    "Mini": "Mini"
+  },
+  "Other": {
+    "Title": "Other",
+    "Safe_For_Pets": "Safe for pets",
+    "Easy_Care": "Easy care"
+  },
+  "Pots_Planters": {
+    "Title": "Pots & Planters",
+    "All_Pots_Planters": "All pots & planters"
+  },
+  "Pots": {
+    "Title": "Pots",
+    "All_Pots": "All pots"
+  },
+  "Planters": {
+    "Title": "Planters",
+    "All_Planters": "All planters"
+  },
+  "Material": {
+    "Title": "Material",
+    "Plastic": "Plastic",
+    "Ceramic": "Ceramic",
+    "Clay": "Clay",
+    "Metal": "Metal"
+  },
+  "Watering_Cans": {
+    "Title": "Watering Cans",
+    "All_Watering_Cans": "All watering cans",
+    "Plastic": "Plastic",
+    "Metal": "Metal"
+  },
+  "Gardening_Accessories": {
+    "Title": "Gardening Accessories",
+    "Tools": "Tools",
+    "Gloves": "Gloves"
+  },
+  "Decorations": {
+    "Title": "Decorations",
+    "All_Decorations": "All decorations",
+    "Plant_Stands": "Plant stands",
+    "Hanging_Holders_Macrame_Hangers": "Hanging holders & Macrame hangers"
+  },
+  "Fertilizers": {
+    "Title": "Fertilizers",
+    "All_Fertilizers": "All fertilizers",
+    "Fertilizers": "Fertilizers"
+  }
 }

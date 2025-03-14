@@ -11,46 +11,91 @@
   "All_Watering_Cans": "Wszystkie konewki",
   "Bestsellers": "Bestsellery",
   "Big": "Duży",
-  "Calathea_Maranta": "Kalatea i Maranta",
   "Ceramic": "Ceramika",
   "Clay": "Glina",
   "Contact": "Kontakt",
-  "Decorations": "Dekoracje",
   "Easy_Care": "Łatwe w uprawie",
   "Eco_Packaging": "Ekologiczne pakowanie",
   "Eco_Packaging_Highlight": "Wykorzystujemy opakowania przyjazne środowisku",
   "Fast_Shipment": "Szybka dostawa",
   "Fast_Shipment_Highlight": "Gwarantujemy dostawę w ciągu 2 dni roboczych",
-  "Fertilizers": "Nawozy",
-  "Gardening_Accessories": "Akcesoria ogrodnicze",
   "Gardening_Tools": "Narzędzia ogrodnicze",
   "Gloves": "Rękawice",
-  "Hanging_Holders_Macrame_Hangers": "Wiszące uchwyty i makramowe wieszaki",
-  "Hoya": "Hoja",
-  "Material": "Materiał",
   "Mini": "Bardzo mały",
   "Medium": "Średni",
   "Metal": "Metal",
-  "Monstera": "Monstera",
-  "Other": "Inne",
   "Our_Bestsellers": "Nasze Bestsellery",
   "Quality_Guarantee": "Gwarancja jakości",
   "Quality_Guarantee_Highlight": "Nasze produkty są stworzone z wysokiej jakości surowców",
-  "Pilea": "Pilea",
-  "Philodendron": "Filodendron",
-  "Planters": "Osłonki",
   "Plants": "Rośliny",
   "Plant_Stands": "Stojaki na rośliny",
   "Plastic": "Plastik",
-  "Pots": "Doniczki",
-  "Pots_Planters": "Doniczki i osłonki",
+  "Price": "Cena",
   "Privacy_Policy": "Polityka prywatności",
   "Safe_For_Pets": "Bezpieczne dla zwierząt",
   "Sale_Capital_Letters": "WYPRZEDAŻ",
-  "Size": "Rozmiar",
   "Small": "Mały",
-  "Species": "Gatunki",
   "Terms_Of_Service": "Warunki świadczenia usług",
-  "Watering_Cans": "Konewki",
-  "Why_Us": "Dlaczego my?"
+  "Why_Us": "Dlaczego my?",
+  "Species": {
+    "Title": "Gatunki",
+    "Calathea_Maranta": "Kalatea i Maranta",
+    "Pilea": "Pilea",
+    "Philodendron": "Filodendron",
+    "Monstera": "Monstera",
+    "Hoya": "Hoja"
+  },
+  "Size": {
+    "Title": "Rozmiar",
+    "Big": "Duży",
+    "Medium": "Średni",
+    "Small": "Mały",
+    "Mini": "Bardzo mały"
+  },
+  "Other": {
+    "Title": "Inne",
+    "Safe_For_Pets": "Bezpieczne dla zwierząt",
+    "Easy_Care": "Łatwe w uprawie"
+  },
+  "Pots_Planters": {
+    "Title": "Doniczki i osłonki",
+    "All_Pots_Planters": "Wszystkie doniczki i osłonki"
+  },
+  "Pots": {
+    "Title": "Doniczki",
+    "All_Pots": "Wszystkie doniczki"
+  },
+  "Planters": {
+    "Title": "Osłonki",
+    "All_Planters": "Wszystkie osłonki"
+  },
+  "Material": {
+    "Title": "Materiał",
+    "Plastic": "Plastik",
+    "Ceramic": "Ceramika",
+    "Clay": "Glina",
+    "Metal": "Metal"
+  },
+  "Watering_Cans": {
+    "Title": "Konewki",
+    "All_Watering_Cans": "Wszystkie konewki",
+    "Plastic": "Plastik",
+    "Metal": "Metal"
+  },
+  "Gardening_Accessories": {
+    "Title": "Akcesoria ogrodnicze",
+    "Tools": "Narzędzia",
+    "Gloves": "Rękawice"
+  },
+  "Decorations": {
+    "Title": "Dekoracje",
+    "All_Decorations": "Wszystkie dekoracje",
+    "Plant_Stands": "Stojaki na rośliny",
+    "Hanging_Holders_Macrame_Hangers": "Wiszące uchwyty i makramowe wieszaki"
+  },
+  "Fertilizers": {
+    "Title": "Nawozy",
+    "All_Fertilizers": "Wszystkie nawozy",
+    "Fertilizers": "Nawozy"
+  }
 }
