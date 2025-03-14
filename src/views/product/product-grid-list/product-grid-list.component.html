@@ -1,5 +1,37 @@
-<div class="container-fluid d-flex flex-wrapnp">
-  @for(product of productList; track product.name) {
-    <app-product-card [productInput]="product"></app-product-card>
-  }
+<div class="container-fluid py-5 px-5">
+  <!-- Górny pasek filtrowania -->
+  <!-- <div class="row mb-4">
+    <div class="col d-flex justify-content-between align-items-center">
+      <div>produkty: {{productList.length}}</div>
+    </div>
+  </div> -->
+
+  <div class="row">
+
+    <div class="col-lg-2 col-md-3">
+      <div class="mb-4">
+        <h3 class="h5 mb-3">Cena</h3>
+        <div class="d-flex gap-3 align-items-center">
+          <div>
+            <label for="price-from" class="form-label text-decoration-none text-secondary mb-2">od</label>
+            <input type="number" class="form-control" id="price-from" placeholder="0">
+          </div>
+          <div>
+            <label for="price-to" class="form-label text-decoration-none text-secondary mb-2">do</label>
+            <input type="number" class="form-control" id="price-to" placeholder="200">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-10 col-md-9">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5 mb-4">
+        @for(product of productList; track product.name) {
+          <div class="col-auto">
+            <app-product-card [productInput]="product"></app-product-card>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
 </div>

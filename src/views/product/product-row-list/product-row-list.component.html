@@ -2,9 +2,9 @@
   <h3 class="m-4 text-center">{{'Our_Bestsellers' | translate}}</h3>
   <div class="carousel-inner">
     @for(group of groupedList; track group[$index]) {
-      <div class="carousel-item active d-flex flex-wrap justify-content-center" [class.active]="groupedList.indexOf(group) === 0" [style.transform]="'translateX(' + (groupedList.indexOf(group) - currentSlideIndex) * 100 + '%)'">
+      <div class="carousel-item active d-flex flex-wrap justify-content-center gap-5 mb-4" [class.active]="groupedList.indexOf(group) === 0" [style.transform]="'translateX(' + (groupedList.indexOf(group) - currentSlideIndex) * 100 + '%)'">
         @for(product of group; track product.name) {
-          <app-product-card [productInput]="product"></app-product-card>
+          <app-product-card [productInput]="product" style="max-width: 18rem;"></app-product-card>
         }
       </div>
     }

@@ -13,6 +13,8 @@ import {ProductCardComponent} from '../product-card/product-card.component';
 })
 export class ProductGridListComponent {
 
+  categories: string[] = ["Kalatea i Maranta", "Pilea", "Filodendron", "Monstera", "Hoya"];
+
   productList : ProductData[] = [
     {
       id: 1,
